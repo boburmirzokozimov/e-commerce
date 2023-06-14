@@ -1,0 +1,52 @@
+version: '3'
+services:
+    e-commerce-nginx:
+        build:
+            context: ./app/docker
+            dockerfile: nginx.docker
+        volumes:
+            - ./app:/app
+        depends_on:
+            - e-commerce-php-fpm
+        ports:
+            - '8080:80'
+
+    e-commerce-php-fpm:
+        build:
+            context: ./app/docker
+            dockerfile: php-fpm.docker
+        volumes:
+            - ./app:/app
+        depends_on:
+            - e-commerce-postgres
+
+    e-commerce-php-cli:
+        build:
+            context: ./app/docker
+            dockerfile: php-cli.docker
+        volumes:
+            - ./app:/app
+            - composer:/root/.composer/cache
+        depends_on:
+            - e-commerce-postgres
+
+    e-commerce-postgres:
+        image: postgres:15-alpine
+        volumes:
+            - e-commerce-postgres:/var/lib/postgresql/data
+        environment:
+            POSTGRES_USER: app
+            POSTGRES_PASSWORD: secret
+            POSTGRES_DB: app
+        ports:
+            - "54321:5432"
+
+    e-commerce-node:
+        image: node:20-alpine
+        volumes:
+            - ./app:/app
+        working_dir: /app
+
+volumes:
+    e-commerce-postgres:
+    composer:
