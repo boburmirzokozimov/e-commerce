@@ -22,7 +22,7 @@ docker-pull:
 docker-build:
 	docker-compose build
 
-e-commerce-init: e-commerce-composer-install e-commerce-assets-install e-commerce-wait-db e-commerce-migrations
+e-commerce-init: e-commerce-composer-install e-commerce-assets-install e-commerce-wait-db e-commerce-migrations e-commerce-fixtures
 
 e-commerce-composer-install:
 	docker-compose run --rm e-commerce-php-cli composer install
@@ -36,12 +36,15 @@ e-commerce-wait-db:
 
 e-commerce-migrations:
 	docker-compose run --rm e-commerce-php-cli php artisan migrate
+	docker-compose run --rm e-commerce-php-cli php artisan storage:link
+
 
 e-commerce-fixtures:
-	docker-compose run --rm e-commerce-php-cli php bin/console doctrine:fixtures:load
+	docker-compose run --rm e-commerce-php-cli php artisan db:seed
 
 e-commerce-assets-dev:
 	docker-compose run --rm e-commerce-node npm run dev
+	docker-compose run --rm e-commerce-node yarn dev
 
 e-commerce-test:
 	docker-compose run --rm e-commerce-php-cli php bin/phpunit
