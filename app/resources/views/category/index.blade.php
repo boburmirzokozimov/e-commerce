@@ -21,7 +21,7 @@
                         @include('category.create')
                     </div>
 
-                    <div class="mt-6">
+                    <div x-data="{ active = false }" class="mt-6">
                         @foreach($categories as $category)
                             @include('category.table')
                         @endforeach

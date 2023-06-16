@@ -5,102 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35bd9110-045d-47e3-b725-815167bc7d01" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/UpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Category/Services/CategoryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/User/Model/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Services/FileUploader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/resources/views/category/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/resources/views/category/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/resources/views/category/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/resources/views/order/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/resources/views/product/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/resources/views/tag/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/views/category/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/app/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/TrustHosts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/TrustHosts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/ValidateSignature.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/ValidateSignature.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/User/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bootstrap/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/broadcasting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/hashing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/hashing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/logging.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/queue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/sanctum.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/sanctum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/docker/nginx.docker" beforeDir="false" afterPath="$PROJECT_DIR$/app/docker/nginx.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/docker/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/app/docker/nginx/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/docker/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/app/docker/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/docker/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/app/docker/php-fpm.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/docker/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/app/docker/php/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/CreatesApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/views/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/views/category/table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/table.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -488,6 +396,8 @@
       <workItem from="1686725473136" duration="12931000" />
       <workItem from="1686804010210" duration="4907000" />
       <workItem from="1686811631313" duration="18890000" />
+      <workItem from="1686833708452" duration="88000" />
+      <workItem from="1686889750191" duration="5903000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1686734358003</created>
@@ -503,7 +413,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686734448910</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Commit">
+      <created>1686833768267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686833768267</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First Commit">
+      <created>1686833789532</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686833789532</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
