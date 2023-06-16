@@ -21,11 +21,13 @@
                         @include('category.create')
                     </div>
 
-                    <div x-data="{ active = false }" class="mt-6">
+                    <div x-data="{ active: false }" class="mt-6">
                         @foreach($categories as $category)
                             @include('category.table')
                         @endforeach
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </x-app-layout>
