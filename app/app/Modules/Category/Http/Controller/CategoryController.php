@@ -17,6 +17,13 @@ class CategoryController extends Controller
         return view('category.index', ['categories' => Category::all()]);
     }
 
+    public function destroy(Category $category)
+    {
+        Category::destroy($category->id);
+        
+        return back()->with('success', 'Successfully deleted category');
+    }
+
     public function store(CreateRequest $request, UseCase\Create\Handler $handler)
     {
         try {
@@ -38,6 +45,6 @@ class CategoryController extends Controller
             $this->logger->alert($e->getMessage(), $e->getTrace());
             return back()->with('error', 'Oops! Something went wrong');
         }
-        return redirect(route('categories'))->with('success', 'Successfully deleted category');
+        return redirect(route('categories'))->with('success', 'Successfully updated category');
     }
 }

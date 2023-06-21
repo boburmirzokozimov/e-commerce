@@ -17,7 +17,9 @@ class Handler
         $product = $this->repository->getById($command->id);
 
         if (!empty($command->image)) {
-            $this->uploader->remove($product->photo);
+            if (!empty($product->photo)) {
+                $this->uploader->remove($product->photo);
+            }
             $command->image = $this->uploader->upload($command->image, FileUploader::PRODUCT);
         } else {
             $command->image = $product->image;

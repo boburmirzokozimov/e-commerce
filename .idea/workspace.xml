@@ -4,54 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35bd9110-045d-47e3-b725-815167bc7d01" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/CustomModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/CreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/UpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/Services/ProductRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Create/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Create/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Update/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Update/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/factories/OrderFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/factories/ProductFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/resources/views/_flash.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/Unit/ProductTest.php" afterDir="false" />
+    <list default="true" id="35bd9110-045d-47e3-b725-815167bc7d01" name="Changes" comment="Test for create and update in products">
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/DeleteRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Delete/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Delete/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Tag/Http/Request/CreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Tag/Http/Request/UpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/views/product/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/views/product/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/views/product/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/views/tag/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/views/tag/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/views/tag/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/Feature/TagTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/Unit/TagTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/test.kkQ2AA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/test.kkQ2AA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/test.kkQ2AA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Http/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Http/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/CreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/CreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/UpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/UpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Model/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Services/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Services/CategoryRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Command.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/Order/Http/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Order/Http/Controller/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app/Modules/Product/Http/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/CreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/CreateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/UpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/UpdateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Product/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Product/Model/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Product/Services/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Product/Services/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Update/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Update/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app/Modules/Tag/Http/Controller/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Tag/Http/Controller/TagController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Modules/User/Model/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/User/Model/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/Services/FileUploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Services/FileUploader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/factories/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/factories/CategoryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/migrations/2023_06_15_081134_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/migrations/2023_06_15_081134_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/views/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/views/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/views/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/views/category/table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/table.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/views/order/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/order/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/views/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/product/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/views/tag/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/tag/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/Feature/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Feature/CategoryTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/Unit/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Unit/CategoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +316,7 @@
     "WebServerToolWindowFactoryState": "false",
     "code.cleanup.on.save": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/boburmirzo/Projects/Projects/Local/Laravel/e-commerce/app/app/Modules/Product/UseCase",
+    "last_opened_file_path": "/home/boburmirzo/Projects/Projects/Local/Laravel/e-commerce/app/resources/views/tag",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -349,11 +334,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/resources/views/tag" />
+      <recent name="$PROJECT_DIR$/app/resources/views/product" />
       <recent name="$PROJECT_DIR$/app/app/Modules/Product/UseCase" />
       <recent name="$PROJECT_DIR$/app/app/Modules/Product/Http/Request" />
       <recent name="$PROJECT_DIR$/app/app/Modules" />
-      <recent name="$PROJECT_DIR$/app/app/Modules/Category" />
-      <recent name="$PROJECT_DIR$/app/app/Modules/Order" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/app/Modules/User/Http" />
@@ -361,29 +346,29 @@
       <recent name="$PROJECT_DIR$/www" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ProductTest.test_admin_can_update_a_product">
+  <component name="RunManager" selected="PHPUnit.TagTest.test_admin_can_update_a_tag">
     <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
       <method v="2" />
     </configuration>
-    <configuration name="CategoryTest.test_it_has_many_products" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\CategoryTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Unit/CategoryTest.php" method="test_it_has_many_products" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ProductTest.test_admin_can_create_a_product" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" method="test_admin_can_create_a_product" scope="Method" />
+    <configuration name="ProductTest.test_admin_can_delete_the_product" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" method="test_admin_can_delete_the_product" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ProductTest.test_admin_can_update_a_product" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" method="test_admin_can_update_a_product" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ProductTest.test_it_belongs_to_a_category" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Unit/ProductTest.php" method="test_it_belongs_to_a_category" scope="Method" />
+    <configuration name="TagTest.test_admin_can_create_a_tag" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TagTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Feature/TagTest.php" method="test_admin_can_create_a_tag" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ProductTest.test_it_has_a_path" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Unit/ProductTest.php" method="test_it_has_a_path" scope="Method" />
+    <configuration name="TagTest.test_admin_can_update_a_tag" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TagTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Feature/TagTest.php" method="test_admin_can_update_a_tag" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TagTest.test_it_has_a_path" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\TagTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Unit/TagTest.php" method="test_it_has_a_path" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -398,11 +383,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.TagTest.test_admin_can_update_a_tag" />
+        <item itemvalue="PHPUnit.TagTest.test_it_has_a_path" />
+        <item itemvalue="PHPUnit.TagTest.test_admin_can_create_a_tag" />
+        <item itemvalue="PHPUnit.ProductTest.test_admin_can_delete_the_product" />
         <item itemvalue="PHPUnit.ProductTest.test_admin_can_update_a_product" />
-        <item itemvalue="PHPUnit.ProductTest.test_it_has_a_path" />
-        <item itemvalue="PHPUnit.ProductTest.test_admin_can_create_a_product" />
-        <item itemvalue="PHPUnit.ProductTest.test_it_belongs_to_a_category" />
-        <item itemvalue="PHPUnit.CategoryTest.test_it_has_many_products" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +405,9 @@
       <workItem from="1686833708452" duration="88000" />
       <workItem from="1686889750191" duration="5903000" />
       <workItem from="1686897235932" duration="5469000" />
-      <workItem from="1687322137360" duration="6543000" />
+      <workItem from="1687322137360" duration="8104000" />
+      <workItem from="1687330994113" duration="5044000" />
+      <workItem from="1687336100036" duration="6215000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1686734358003</created>
@@ -464,7 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686898895501</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Test for create and update in products">
+      <created>1687328922503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687328922503</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Test for create and update in products">
+      <created>1687328929814</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687328929814</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +473,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Test for create and update in products" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test for create and update in products" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

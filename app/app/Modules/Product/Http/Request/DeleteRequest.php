@@ -2,9 +2,10 @@
 
 namespace App\Modules\Product\Http\Request;
 
+use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateRequest extends FormRequest
+class DeleteRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,12 +23,7 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'id' => 'exists:products,id',
-            'name' => 'string|max:55',
-            'description' => 'string',
-            'price' => 'int',
-            'image' => 'nullable|file',
-            'category_id' => 'exists:categories,id'
+            'id' => 'exists:products,id'
         ];
     }
 }

@@ -22,6 +22,11 @@ class Product extends Model
         return 'admin/products/' . $this->id;
     }
 
+    public function photo(): string
+    {
+        return '/storage/' . $this->image;
+    }
+
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);

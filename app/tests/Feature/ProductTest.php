@@ -30,7 +30,6 @@ class ProductTest extends TestCase
 
     public function test_admin_can_update_a_product()
     {
-        $this->withoutExceptionHandling();
         $this->signInAsAdmin();
 
         $product = Product::factory()->create();
@@ -47,6 +46,18 @@ class ProductTest extends TestCase
         $product->refresh();
 
         $this->assertDatabaseHas('products', ['name' => 'My new name']);
+    }
+
+    public function test_admin_can_delete_the_product()
+    {
+        $this->withoutExceptionHandling();
+        $this->signInAsAdmin();
+
+        $product = Product::factory()->create();
+
+        $this->post($product->path(), ['id' => $product->id]);
+
+        $this->assertModelMissing($product);
     }
 
 }

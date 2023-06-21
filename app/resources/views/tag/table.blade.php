@@ -4,30 +4,26 @@
         <thead class="bg-gray-50">
         <tr>
             <th scope="col" class="px-6 py-4 font-medium text-gray-900">Id</th>
-            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Title</th>
-            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Description</th>
-            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Photo</th>
+            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Name</th>
             <th scope="col" class="px-6 py-4 font-medium text-gray-900"></th>
         </tr>
         </thead>
         <tbody class="divide-y divide-gray-100 border-t border-gray-100">
-        @foreach($categories as $category)
+        @foreach($tags as $tag)
 
             <tr class="hover:bg-gray-50">
+
                 <td class="px-6 py-4 font-normal text-gray-900">
-                    <div class="font-medium text-gray-700">{{$category->id}}</div>
+                    <div class="font-medium text-gray-700">{{$tag->id}}</div>
                 </td>
+
                 <td class="px-6 py-4 font-bold">
-                    {{$category->title}}
-                </td>
-                <td class="px-6 py-4">{{str($category->description)->limit(20)}}</td>
-                <td class="px-6 py-4">
-                    <img src="{{$category->photo()}}" class="h-10 w-10 rounded-full" alt="{{$category->title}}">
+                    {{$tag->name}}
                 </td>
 
                 <td class="px-6 py-4">
                     <div class="flex justify-end gap-4">
-                        <form action="{{ route('categories.destroy',['category'=>$category->id]) }}"
+                        <form action="{{$tag->path()}}"
                               method="post">
                             @csrf
                             @method('delete')
@@ -50,7 +46,7 @@
                             </button>
                         </form>
 
-                        <button @click="active = {{$category->id}}" href="#">
+                        <button @click="active = {{$tag->id}}" href="#">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -72,7 +68,7 @@
                 </td>
             </tr>
             <div id="relative">
-                @include('category.edit')
+                @include('tag.edit')
             </div>
 
         @endforeach

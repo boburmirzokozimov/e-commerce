@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Modules\Product\Http\Request;
+namespace App\Modules\Tag\Http\Request;
 
+use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateRequest extends FormRequest
@@ -22,12 +23,7 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'id' => 'exists:products,id',
-            'name' => 'string|max:55',
-            'description' => 'string',
-            'price' => 'int',
-            'image' => 'nullable|file',
-            'category_id' => 'exists:categories,id'
+            'name' => 'string|max:55|unique:tags,name',
         ];
     }
 }

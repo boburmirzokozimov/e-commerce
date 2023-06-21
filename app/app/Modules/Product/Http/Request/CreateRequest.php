@@ -26,7 +26,7 @@ class CreateRequest extends FormRequest
             'name' => 'string|max:55',
             'description' => 'string',
             'price' => 'int',
-            'image' => 'nullable|file',
+            'image' => 'nullable|image',
             'category_id' => 'exists:categories,id'
         ];
     }

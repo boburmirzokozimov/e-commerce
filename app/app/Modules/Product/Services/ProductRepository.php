@@ -2,6 +2,7 @@
 
 namespace App\Modules\Product\Services;
 
+use App\Modules\Product\Model\Product;
 use App\Modules\Product\UseCase;
 use Illuminate\Support\Facades\DB;
 
@@ -34,5 +35,10 @@ class ProductRepository
     public function getById(int $id)
     {
         return DB::table('products')->where('id', $id)->get()->first();
+    }
+
+    public function remove(int $product): void
+    {
+        Product::destroy($product);
     }
 }
