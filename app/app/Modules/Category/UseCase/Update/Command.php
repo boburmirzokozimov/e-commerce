@@ -11,7 +11,7 @@ class Command
     private string $description;
     private $photo = null;
 
-    public function __construct(int $id, string $title, string $description, ?string $photo)
+    public function __construct(int $id, string $title, string $description, $photo)
     {
         $this->id = $id;
         $this->title = $title;
@@ -44,7 +44,7 @@ class Command
         return $this->description;
     }
 
-    public function getPhoto(): ?string
+    public function getPhoto()
     {
         return $this->photo;
     }

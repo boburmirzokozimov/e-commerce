@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 class FileUploader
 {
     public const CATEGORY = 'category';
+    public const PRODUCT = 'product';
 
     public function upload(UploadedFile $file, string $path): string
     {

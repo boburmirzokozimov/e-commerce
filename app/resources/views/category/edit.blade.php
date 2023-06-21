@@ -3,7 +3,7 @@
     x-if="active == '{{$category->id}}'"
     @click.away="active = false"
     class="absolute right-[50%] top-1/2  translate-x-[50%] translate-y-[-50%] pointer-events-auto flex w-[400px]  px-4 py-6 flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none">
-    <form action="{{$category->path()}}" method="post">
+    <form action="{{$category->path()}}" enctype="multipart/form-data" method="post">
         @csrf
         @method('PUT')
         <h4 class="mb-4">Edit a category</h4>
@@ -22,7 +22,7 @@
             </div>
             <input
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-cyan-500"
-                type="file" name="photo" id="">
+                type="file" id="photo" name="photo">
         </div>
         <div class="mb-4 flex ">
             <input

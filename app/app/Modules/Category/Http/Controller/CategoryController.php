@@ -8,13 +8,9 @@ use App\Modules\Category\Http\Request\UpdateRequest;
 use App\Modules\Category\Model\Category;
 use App\Modules\Category\UseCase;
 use Exception;
-use Illuminate\Log\Logger;
 
 class CategoryController extends Controller
 {
-    public function __construct(private Logger $logger)
-    {
-    }
 
     public function index()
     {
@@ -30,7 +26,7 @@ class CategoryController extends Controller
             $this->logger->alert($e->getMessage(), $e->getTrace());
             return back()->with('error', 'Oops! Something went wrong');
         }
-        return redirect(route('categories'));
+        return redirect(route('categories'))->with('success', 'Successfully created category');
     }
 
     public function update(UpdateRequest $request, UseCase\Update\Handler $handler)
@@ -42,6 +38,6 @@ class CategoryController extends Controller
             $this->logger->alert($e->getMessage(), $e->getTrace());
             return back()->with('error', 'Oops! Something went wrong');
         }
-        return redirect(route('categories'));
+        return redirect(route('categories'))->with('success', 'Successfully deleted category');
     }
 }

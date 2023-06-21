@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Category\Http\Request;
+namespace App\Modules\Product\Http\Request;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
@@ -23,9 +23,11 @@ class CreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'string|max:55',
+            'name' => 'string|max:55',
             'description' => 'string',
-            'photo' => 'nullable|file'
+            'price' => 'int',
+            'image' => 'nullable|file',
+            'category_id' => 'exists:categories,id'
         ];
     }
 }

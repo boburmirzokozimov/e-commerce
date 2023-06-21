@@ -5,12 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35bd9110-045d-47e3-b725-815167bc7d01" name="Changes" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/CustomModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/CreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Request/UpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/Services/ProductRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Create/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Create/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Update/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app/Modules/Product/UseCase/Update/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/factories/OrderFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/factories/ProductFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/views/_flash.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/Unit/ProductTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/test.kkQ2AA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/test.kkQ2AA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12da5f0f-abdc-4fa1-8181-a74aa7732254/storage_v2/_src_/database/test.kkQ2AA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Http/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Http/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/CreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/CreateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/UpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Http/Request/UpdateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Model/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/Services/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/Services/CategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Create/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Category/UseCase/Update/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Order/Http/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Order/Http/Controller/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Product/Http/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Product/Http/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/Tag/Http/Controller/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/Tag/Http/Controller/TagController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Modules/User/Model/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Modules/User/Model/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Services/FileUploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Services/FileUploader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/factories/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/factories/CategoryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/migrations/2023_06_15_081134_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/migrations/2023_06_15_081134_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/views/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/views/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/views/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resources/views/category/table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/category/table.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/views/order/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/order/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/views/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/views/tag/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/views/tag/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/Feature/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Feature/CategoryTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/tests/Unit/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Unit/CategoryTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -283,37 +323,37 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/boburmirzo/Projects/Projects/Local/Laravel/e-commerce/app/app/Modules&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/boburmirzo/Projects/Projects/Local/Laravel/e-commerce/app/app/Modules/Product/UseCase",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/app/Modules/Product/UseCase" />
+      <recent name="$PROJECT_DIR$/app/app/Modules/Product/Http/Request" />
       <recent name="$PROJECT_DIR$/app/app/Modules" />
       <recent name="$PROJECT_DIR$/app/app/Modules/Category" />
       <recent name="$PROJECT_DIR$/app/app/Modules/Order" />
-      <recent name="$PROJECT_DIR$/app/app/Modules/Product" />
-      <recent name="$PROJECT_DIR$/app/app/Modules/Tag" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/app/Modules/User/Http" />
@@ -321,17 +361,29 @@
       <recent name="$PROJECT_DIR$/www" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+  <component name="RunManager" selected="PHPUnit.ProductTest.test_admin_can_update_a_product">
     <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
       <method v="2" />
     </configuration>
-    <configuration name="CategoryTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\CategoryTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Unit/CategoryTest.php" scope="Class" />
+    <configuration name="CategoryTest.test_it_has_many_products" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\CategoryTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Unit/CategoryTest.php" method="test_it_has_many_products" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CategoryTest.test_admin_can_edit_a_category" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\CategoryTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Feature/CategoryTest.php" method="test_admin_can_edit_a_category" scope="Method" />
+    <configuration name="ProductTest.test_admin_can_create_a_product" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" method="test_admin_can_create_a_product" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductTest.test_admin_can_update_a_product" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Feature/ProductTest.php" method="test_admin_can_update_a_product" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductTest.test_it_belongs_to_a_category" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Unit/ProductTest.php" method="test_it_belongs_to_a_category" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductTest.test_it_has_a_path" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ProductTest" configuration_file="$PROJECT_DIR$/app/phpunit.xml" file="$PROJECT_DIR$/app/tests/Unit/ProductTest.php" method="test_it_has_a_path" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -344,47 +396,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yaml.e-commerce-nginx: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="e-commerce-nginx" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yaml.e-commerce-php-fpm: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="e-commerce-php-fpm" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yaml.e-commerce-php-fpm: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yaml.e-commerce-nginx: Compose Deployment" />
-        <item itemvalue="PHPUnit.CategoryTest" />
-        <item itemvalue="PHPUnit.CategoryTest.test_admin_can_edit_a_category" />
+        <item itemvalue="PHPUnit.ProductTest.test_admin_can_update_a_product" />
+        <item itemvalue="PHPUnit.ProductTest.test_it_has_a_path" />
+        <item itemvalue="PHPUnit.ProductTest.test_admin_can_create_a_product" />
+        <item itemvalue="PHPUnit.ProductTest.test_it_belongs_to_a_category" />
+        <item itemvalue="PHPUnit.CategoryTest.test_it_has_many_products" />
       </list>
     </recent_temporary>
   </component>
@@ -401,7 +419,8 @@
       <workItem from="1686811631313" duration="18890000" />
       <workItem from="1686833708452" duration="88000" />
       <workItem from="1686889750191" duration="5903000" />
-      <workItem from="1686897235932" duration="1534000" />
+      <workItem from="1686897235932" duration="5469000" />
+      <workItem from="1687322137360" duration="6543000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1686734358003</created>
@@ -438,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686897453033</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="First Commit">
+      <created>1686898895501</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686898895501</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -27,6 +27,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::put('/admin/categories/{id}', [CategoryController::class, 'update'])->name('categories.update');
 
     Route::get('/admin/products', [ProductController::class, 'index'])->name('products');
+    Route::post('/admin/products', [ProductController::class, 'store'])->name('products.store');
+    Route::put('/admin/products/{id}', [ProductController::class, 'update'])->name('products.update');
 
     Route::get('/admin/orders', [OrderController::class, 'index'])->name('orders');
 

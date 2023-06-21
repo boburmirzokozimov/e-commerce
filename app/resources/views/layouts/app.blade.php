@@ -30,9 +30,14 @@
     @endif
 
     <!-- Page Content -->
-    <main>
+    <main class="relative">
         {{ $slot }}
+        <div class="absolute top-0 left-0">
+            @include('_flash')
+        </div>
     </main>
+
+
 </div>
 </body>
 </html>
