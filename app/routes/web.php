@@ -33,7 +33,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::delete('/admin/products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
     Route::get('/admin/products/create', [ProductController::class, 'create'])->name('products.create');
 
+    Route::get('/admin/orders/partials', [OrderController::class, 'partials'])->name('orders.partials');
     Route::get('/admin/orders', [OrderController::class, 'index'])->name('orders');
+    Route::post('/admin/orders', [OrderController::class, 'store'])->name('orders.store');
 
     Route::get('/admin/tags', [TagController::class, 'index'])->name('tags');
     Route::post('/admin/tags', [TagController::class, 'store'])->name('tags.store');

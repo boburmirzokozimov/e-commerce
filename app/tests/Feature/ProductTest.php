@@ -55,7 +55,7 @@ class ProductTest extends TestCase
 
         $product = Product::factory()->create();
 
-        $this->post($product->path(), ['id' => $product->id]);
+        $this->delete($product->path(), ['id' => $product->id]);
 
         $this->assertModelMissing($product);
     }

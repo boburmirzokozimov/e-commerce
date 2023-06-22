@@ -10,26 +10,29 @@ class ProductRepository
 {
     public function create(UseCase\Create\Command $command): void
     {
-        DB::table('products')->insert(
-            [
-                'name' => $command->name,
-                'description' => $command->description,
-                'image' => $command->image,
-                'price' => $command->price,
-                'category_id' => $command->category_id
-            ]
-        );
+        Product::create([
+            'name' => $command->name,
+            'description' => $command->description,
+            'image' => $command->image,
+            'price' => $command->price,
+            'category_id' => $command->category_id
+        ])->tags()->attach($command->tags);
+
     }
 
     public function update(UseCase\Update\Command $command): void
     {
-        DB::table('products')->where('id', $command->id)->update([
+        $product = Product::find($command->id);
+
+        $product->update([
             'name' => $command->name,
             'description' => $command->description,
             'image' => $command->image,
             'price' => $command->price,
             'category_id' => $command->category_id
         ]);
+        
+        $product->tags()->sync($command->tags);
     }
 
     public function getById(int $id)

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Product\Http\Request;
+namespace App\Modules\Order\Http\Request;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
@@ -23,12 +23,10 @@ class CreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'tags' => 'array|exists:tags,id',
             'name' => 'string|max:55',
-            'description' => 'string',
-            'price' => 'int',
-            'image' => 'nullable|image',
-            'category_id' => 'exists:categories,id'
+            'phone' => 'string|max:55',
+            'price' => 'nullable',
+            'order' => 'array|nullable'
         ];
     }
 }

@@ -22,6 +22,7 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'tags' => 'array|exists:tags,id',
             'id' => 'exists:products,id',
             'name' => 'string|max:55',
             'description' => 'string',

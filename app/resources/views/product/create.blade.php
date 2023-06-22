@@ -34,6 +34,16 @@
                                     </select>
                                 </div>
 
+                                <div class="mb-4 flex flex-wrap">
+                                    @foreach($tags as $tag)
+                                        <div class=" mr-4 flex items-center">
+                                            <label class="mr-2" for="scales">{{$tag->name}}</label>
+                                            <input type="checkbox" id="scales" name="tags[]"
+                                                   value="{{$tag->id}}">
+                                        </div>
+                                    @endforeach
+                                </div>
+
                                 <div class="mb-4">
                                     <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
                                     <input

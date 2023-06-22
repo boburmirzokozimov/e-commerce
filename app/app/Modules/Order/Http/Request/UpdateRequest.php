@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\Product\Http\Request;
+namespace App\Modules\Order\Http\Request;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateRequest extends FormRequest
+class UpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,12 +23,10 @@ class CreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'tags' => 'array|exists:tags,id',
-            'name' => 'string|max:55',
+            'id' => 'exists:categories,id',
+            'title' => 'string|max:55',
             'description' => 'string',
-            'price' => 'int',
-            'image' => 'nullable|image',
-            'category_id' => 'exists:categories,id'
+            'photo' => 'nullable|file'
         ];
     }
 }

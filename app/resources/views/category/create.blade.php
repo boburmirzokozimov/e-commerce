@@ -47,9 +47,9 @@
                       id="category-create-form">
                     @csrf
                     <div class="mb-4">
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="title">Title</label>
+                        <label class="label" for="title">Title</label>
                         <input
-                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-cyan-500"
+                            class="input"
                             type="text" id="title" name="title">
                     </div>
                     <div class="mb-4">
