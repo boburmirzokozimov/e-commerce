@@ -12,7 +12,7 @@ class Command
     public float $price;
     public $image = null;
     public int $category_id;
-    public array $tags;
+    public ?array $tags = null;
 
     public function __construct(int    $id,
                                 string $title,
@@ -20,7 +20,7 @@ class Command
                                        $photo,
                                 float  $price,
                                 int    $category_id,
-                                array  $tags)
+                                ?array $tags)
     {
         $this->id = $id;
         $this->name = $title;

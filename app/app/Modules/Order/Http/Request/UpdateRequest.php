@@ -23,10 +23,10 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'id' => 'exists:categories,id',
-            'title' => 'string|max:55',
-            'description' => 'string',
-            'photo' => 'nullable|file'
+            'name' => 'string|max:55',
+            'phone' => 'string|max:55',
+            'price' => 'nullable',
+            'order' => 'array|nullable'
         ];
     }
 }

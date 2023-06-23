@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Modules\Category\Model\Category;
 use App\Modules\Product\Model\Product;
+use App\Modules\Tag\Model\Tag;
 use Tests\TestCase;
 
 class ProductTest extends TestCase
@@ -14,13 +15,14 @@ class ProductTest extends TestCase
         $this->signInAsAdmin();
 
         $category = Category::factory()->create();
+        $tag = Tag::factory()->create();
 
         $product = [
             'name' => 'test',
             'description' => 'Hello world',
             'price' => 1000,
             'image' => null,
-            'category_id' => $category->id
+            'category_id' => $category->id,
         ];
 
         $this->post('admin/products', $product);
@@ -30,6 +32,7 @@ class ProductTest extends TestCase
 
     public function test_admin_can_update_a_product()
     {
+        $this->withoutExceptionHandling();
         $this->signInAsAdmin();
 
         $product = Product::factory()->create();

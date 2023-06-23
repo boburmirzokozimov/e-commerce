@@ -23,7 +23,7 @@ class CreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'tags' => 'array|exists:tags,id',
+            'tags' => 'nullable|array|exists:tags,id',
             'name' => 'string|max:55',
             'description' => 'string',
             'price' => 'int',

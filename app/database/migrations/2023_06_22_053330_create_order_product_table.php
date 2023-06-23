@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('order_product', function (Blueprint $table) {
-            $table->index(['product_id', 'order_id']);
+            $table->unique(['product_id', 'order_id']);
             $table->unsignedBigInteger('order_id');
             $table->unsignedBigInteger('product_id');
             $table->string('count');

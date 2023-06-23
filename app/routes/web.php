@@ -36,6 +36,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/admin/orders/partials', [OrderController::class, 'partials'])->name('orders.partials');
     Route::get('/admin/orders', [OrderController::class, 'index'])->name('orders');
     Route::post('/admin/orders', [OrderController::class, 'store'])->name('orders.store');
+    Route::get('/admin/orders/{order}', [OrderController::class, 'edit'])->name('orders.edit');
+    Route::put('/admin/orders/{order}', [OrderController::class, 'update'])->name('orders.update');
+    Route::delete('/admin/orders/{order}', [OrderController::class, 'destroy'])->name('orders.destroy');
 
     Route::get('/admin/tags', [TagController::class, 'index'])->name('tags');
     Route::post('/admin/tags', [TagController::class, 'store'])->name('tags.store');
